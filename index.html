@@ -192,6 +192,7 @@ body{
   background: #5F7367;
   border-radius: 50px 20px;
     text-align: center;
+    align-items: center;
 
 }
 .carousel-indicators li{
@@ -202,7 +203,6 @@ body{
 
   height: 50%;
   opacity: 0.6;
-  margin-top: 1vh;
 }
 .carousel-indicators li:first-child{
   margin-left: 0;
@@ -234,6 +234,30 @@ body{
   /*z-index: 2;*/
 }
 
+.np-buttons{
+ background: linear-gradient(
+345deg
+, rgba(147,144,190,1) 8%, rgba(101,101,116,1) 21%, rgba(0,212,255,1) 45%, rgba(105,105,138,1) 88%) !important;
+    text-decoration: none !important;
+    width: 15.4vw !important;
+}
+
+.bottom-carousel{
+  height: 5vh;
+  width: 69vw;
+  background: #5F7367;
+  border-radius: 50px 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: 0% !important;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+    background: rgb(163,102,186);
+background: linear-gradient(345deg, rgba(163,102,186,1) 8%, rgba(233,124,229,1) 21%, rgba(110,207,173,1) 45%, rgba(213,133,224,1) 88%);
+}
+.bottom-carousel li{
+  background: linear-gradient(345deg, rgba(236,74,74,1) 8%, rgba(190,5,64,1) 21%, rgba(190,66,120,1) 45%, rgba(131,14,14,1) 88%);
+}
     </style>
 
 
@@ -433,7 +457,7 @@ margin-top: 2vh;">
 
 <div id="Certificates" style="width: 100vw;height: 90.8vh;">
   <div id = "carouselExampleCaptions"class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators bottom-carousel">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
@@ -501,13 +525,14 @@ margin-top: 2vh;">
   </div>
 
 
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+  <a class="carousel-control-prev np-buttons" href="#carouselExampleCaptions" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <a class="carousel-control-next np-buttons" href="#carouselExampleCaptions" role="button" data-slide="next">
     <span class="sr-only">Next</span>
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
   </a>
 </div>
 </div>
