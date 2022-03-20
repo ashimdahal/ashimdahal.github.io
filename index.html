@@ -1,555 +1,559 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <style type="text/css">
-body{
-  overflow-x: hidden;
-
-}
-      .shaped{
-  height:inherit;
-  width:40vw;
-  float:right;
-  background:#231F20;
-  -webkit-clip-path:polygon(0 0,100% 0,100% 100%,30% 100%);
-  -webkit-shape-margin:20px;
-      position: absolute;
-    right: 0;
-    top: 100.48vh;
-    z-index: 1;
-}
-
-.content{
- 
-  color:whitesmoke;
-  font-size:2.2vw;
-  text-align:justify; 
-  overflow: hidden;
-  text-overflow: ellipsis; 
-  height: 88.7vh;
-
-  font-weight: 1000;
-}
-.content p {
-  text-shadow: 0 0 3px black, 0 0 5px black;
-    -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  /*font-size: 2vw;*/
-}
-
-.text-holder{
-  width: inherit;
-  position: absolute;
-  top: 90%;
-  left: 56%;
-  transform: translate(-50%, -50%)
-}
-
-
-.left{
-    font-size:5vw;
-  line-height:1;
-  float:left;
-  width:48vw;
-  height:88.7vh;
-  margin-top:0;
-  padding-top:20px;
-    background:/*rgba(56, 114, 108, 1)*/ url('img/pp.jpg');
-    color: whitesmoke;
-    background-position: center;
-    background-size: 80vw;
-  -webkit-clip-path:polygon(0 0,100% 0,60% 100%,0 100%);
-  text-shadow: 0 0 3px black, 0 0 5px black;
-  background-repeat: no-repeat;
-
-  
-}
-.content h1{
-
-/*  padding: 2vw;
-  font-size:4vw;
-  line-height:1;
-  float:left;
-  width:34vw;
-  height:88.7vh;
-  margin-top:29vh;
-  margin-left: 2vw;
-  padding-top:20px;
-  -webkit-shape-outside:polygon(0 0,100% 0,40% 100%,0 100%);
-  shape-outside:polygon(0 0,100% 0,40% 100%,0 100%);*/
-}
-
-.content h1 span{
-  font-size:3vw;
-  display:inline-block;
-  }
-
-.d-flex div{
-  width: 30%;
-  margin-left: 0.6vw;
-
-  
-}
-.d-flex img{
-  box-shadow: 0 4px 8px 0 rgba(209, 26, 10, 0.56), 0 6px 20px 0 rgba(209, 26, 10, 0.56);
-
-}
-.d-flex img:hover{
-  transform: scale(1.2);
-    box-shadow: 0 4px 8px 0 rgba(4, 255, 0, 0.52), 0 6px 20px 0 rgba(4, 255, 0, 0.52);
-
-}
-
-.shaped h2{
-  color: ghostwhite;
-  padding: 2vh;
-  text-align: center;
-  text-shadow: 2px solid antiquewhite;
-}
-.d-flex img{
-  width: 100%;
-}
-.bottom div{
-  margin-left: 0.8vw;
-}
-.h1-holder{
-  -webkit-clip-path:polygon(0 0,100% 0,85% 100%,0 100%);
-  width: 44vw;
-  background: #563F1B;
-  text-align: left;
-  position: absolute;
-  top: 57%;
-  z-index: 2;
-  padding: 1px;
-  height: 12vh;
-
-
-}
-.h1-holder h1{
-   font-size:3vw;
-   padding: 2vh;
-  line-height:1;
-
-}
-.h1-holder-holder{
-  -webkit-clip-path:polygon(0 0,100% 0,85% 100%,0 100%);
-  width: 48vw;
-  height: 13vh;
-  background: #F7F052;
-  text-align: center;
-  position: absolute;
-  top: 55%;
-  z-index: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-
-.intro-container{
-  height: 90.8vh;
-}
-
-.intro-container img{
-  height: 90.8vh;
-}
-
-.carousel-caption{
-  top: 2vh;
-  left: 0% !important;
-  /*transform: translate(-15%,0);*/
-
-}
-
-.carousel-caption h5{
- 
-
-
-  text-align: left;
-
-}
-.carousel-caption a{
-  color: navajowhite;
-  text-decoration: none;
-  font-weight: 1000;
-  text-shadow: 0 0 3px black, 0 0 5px black;
-
-}
-.carousel-caption h5{
-  font-weight: 900;
-  text-shadow: 0 0 3px black, 0 0 5px black;
-
-}
-
-.carousel-indicators{
-  height: 5vh;
-  width: 55%;
-  left: 0%;
-  background: #5F7367;
-  border-radius: 50px 20px;
-    text-align: center;
-    align-items: center;
-
-}
-.carousel-indicators li{
-  background: #DBF9F4;
-  width: 5vw;
-  margin-left: 2vw;
-  border-radius: 50px 20px;
-
-  height: 50%;
-  opacity: 0.6;
-}
-.carousel-indicators li:first-child{
-  margin-left: 0;
-}
-
-.carousel-indicators .active{
-  opacity: 1;
-}
-
-.caption-holder{
-    -webkit-clip-path:polygon(0 0,100% 0,85% 100%,0 100%);
-  width: 43vw;
-  background: #5F7367;
-  text-align: left;
-  /*position: absolute;*/
-/*  top: 55%;*/
-  z-index: 2;
-  padding: 0.5%;
-  /*height: 12vh;*/
-
-}
-#certificate-caro div{
-  /*width: 100%;*/
-  height: 90.8vh;
-    background-attachment: fixed !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  /*z-index: 2;*/
-}
-
-.np-buttons{
- background: linear-gradient(
-345deg
-, rgba(147,144,190,1) 8%, rgba(101,101,116,1) 21%, rgba(0,212,255,1) 45%, rgba(105,105,138,1) 88%) !important;
-    text-decoration: none !important;
-    width: 15.4vw !important;
-}
-
-.bottom-carousel{
-  height: 5vh;
-  width: 69vw;
-  background: #5F7367;
-  border-radius: 50px 20px;
-    text-align: center;
-    align-items: center;
-    margin-left: 0% !important;
-    left: 50% !important;
-    transform: translate(-50%, 0);
-    background: rgb(163,102,186);
-background: linear-gradient(345deg, rgba(163,102,186,1) 8%, rgba(233,124,229,1) 21%, rgba(110,207,173,1) 45%, rgba(213,133,224,1) 88%);
-}
-.bottom-carousel li{
-  background: linear-gradient(345deg, rgba(236,74,74,1) 8%, rgba(190,5,64,1) 21%, rgba(190,66,120,1) 45%, rgba(131,14,14,1) 88%);
-}
-    </style>
-
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-    <title>Welcome, Internet user</title>
-
-  </head>
-  <body style="background: black;">
-  <div class="h-100 d-inline-block w-100">
-    
- 
-    <nav class="navbar navbar-expand-lg p-3 fixed-top navbar-dark bg-dark">
-
-
-   <a class="navbar-brand" href="#">
-    <img src="https://www.seekpng.com/png/detail/83-835228_fscheck-by-kurt-random-logo-png.png" width="30" height="30" class="d-inline-block mR-2 align-top" alt="">
-    Ashim Dahal
-  </a>
-
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-   <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#Projects">Projects</a>
-      </li>
-      
-
-      <li class="nav-item">
-        <a class="nav-link" href="#Certificates">Certificates</a>
-      </li>
-   
-    </ul>
-  </div>
-
-
-
-
-</nav>
-<div class="container-fluid" style="height: 88.7vh;padding: 0;margin-top: 10.8vh;
-  background-image:  url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
-    background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  ">
-
-<div class="content">
-  <div class="h1-holder-holder">
-
-      
-    </div>
-    <div class="h1-holder">
-<h1><span>Who is </span> Ashim Dahal?</h1>
-      
-    </div>
-  <div class="left">
-  
-    
-  </div>
-<div class="text-holder">
-<p class="">I am a ML enthusiast who is apparently not very good at html and css.</p>
-</div>
-
-</div>
-</div>
-
-
-
-
- </div>
- 
- <div id = 'Projects'style="height:90.8vh;width:100vw;">
-   <div class="intro-container">
-    <div class="bd-example">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-
-      </ol>
-
-
-    <div class="carousel-inner">
-      <div class="carousel-item active" >
-        <img src="https://s3.amazonaws.com/grazecart/bytable/images/1600824182_5f6aa376b95a5.jpg" class="rounded" alt="...">
-        <div class="carousel-caption  d-md-block">
-
-          <div class="caption-holder">
-            <h5>Projects I have worked on <br> <a href="https://drive.google.com/file/d/1ZrT-8cVBijjZSv-zvbdhXhNJzu85dRGR/view?usp=sharing" target="_blank"> Chicken Recipe Generator using Machine Learning</a></h5>          
-          </div>
-
-         
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/hero.png" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Ashim Dahal.</span>
+                    A Deep Learning researcher.
+                </h1>
+                <p>
+                    I'm a Deep Learning reasearcher, I love to tinker and know about the 
+                    nooks and cranies of deep learning models. I've been programming for 5 years,
+                    and have dedicated 3+ of those years to machine learning and deep learning.
+                    
+                </p>
+                <div class="btn-con">
+                    <a href="/home/ashim/Documents/ashimdahal.github.io/resume/Ashim's Resume.pdf" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-          <div class="carousel-item" >
-        <img src="https://s.abcnews.com/images/Health/gty_sudoku_ll_130912_33x16_992.jpg" alt="...">
-        <div class="carousel-caption  d-md-block">
-          <div class="caption-holder">
-            <h5>Projects I have worked on <br> <a href="https://github.com/ashimdahal/Sudoku-solver" target="_blank"> Sudoku Solver that solves Soduku from images</a></h5>
-         
-          </div>
+    </header>
+    <main>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>WHO am I?</h4>
+                    <p>
+                        When someone asks me who are you? I wonder where I should start from.
+                        I’m a night owl when I have bugs in my code, a morning bird when I don’t.
+                        I’m a reader who reads more research papers than history, more history
+                        than literature. I’m an IT head at the school club, an aspiring data scientist
+                        on LinkedIn, the president at Together We Learn(TWL) learning community and much more.
+                        <br /> <br /> The fact that my identity is not a singularity lays a quandary
+                        to "who am I?" I’m the protagonist of my story. I’m Ashim Dahal.
 
-        </div>
-      </div>
-      <div class="carousel-item" >
-        <img src="https://cdn.techinasia.com/wp-content/uploads/2014/02/flappy-bird-10.jpg" class="rounded" alt="...">
-        <div class="carousel-caption  d-md-block">
-         <div class="caption-holder">
-             <h5>Projects I have worked on <br> <a href="https://github.com/ashimdahal/flappy-bird-using-pygame" 
-            target="_blank">Flappy Bird Game using Pygame</a></h5>
-         
-          </div>
-         
-        </div>
-      </div>
-      <div class="carousel-item" >
-        <img src="https://www.budgetdirect.com.au/blog/wp-content/uploads/2021/02/Header_Cats-vs-Dogs-951x512.png" class="rounded" alt="...">
-        <div class="carousel-caption  d-md-block">
-          <div class="caption-holder">
-             <h5>Projects I have worked on <br> <a href="https://github.com/ashimdahal/dogs-vs-cats-keras-kernel-edition" target="_blank"> CNN that distinguishes between dogs and cats</a></h5>
-         
-          </div>
-         
-        </div>
-      </div>
+                    </p>
+                    <div class="btn-con">
+                        <a href="/home/ashim/Documents/ashimdahal.github.io/resume/Ashim's Resume.pdf" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">15+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">5+</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">50+</p>
+                            <p class="small-text">Happy <br /> TWL Community Members</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">1</p>
+                            <p class="small-text">Research <br /> paper</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                  
+                    <div class="progress-bar">
+                        <p class="prog-title">Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">PyTorch</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="pytorch"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Matplotlib</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="mat"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Tensorflow</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="tf"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Pandas</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="tf"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2010 - present</p>
+                    <h5>Web Developer<span> - Vircrosoft</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2008 - 2011</p>
+                    <h5>Software Engineer<span> - Boogle, Inc.</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2016 - 2017</p>
+                    <h5>C++ Programmer<span> - Slime Tech</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2009 - 2013</p>
+                    <h5>Business Degree<span> - Sussex University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2013 - 2016</p>
+                    <h5>Computer Science Degree<span> - Brookes University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2017 - present</p>
+                    <h5>3d Animation<span> - Brighton University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section sec3" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port1.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port4.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port7.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sec4 " id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Become an Expert in Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Become a Web Designer in 10 Days
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Debbuging made easy with Web Inspector
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Get started with Web Design and UI Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                This is what you need to know about Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sec5 contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    : London, united Kingdom
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>: maclinzuniversal@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span>: Sussex University, East Sussex</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p>
+                                    <span>: 07522670617</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span>: Afrikaans, English, Spanish</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME">
+                                <input type="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <a href="#" class="main-btn">
+                                    <span class="btn-text">Download CV</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-     
-        <div class="carousel-item" >
-
-        <img src="https://cdn.thewirecutter.com/wp-content/uploads/2019/08/scanning-apps-2019-2x1-lowres9658.jpg" alt="...">
-        <div class="carousel-caption  d-md-block">
-         <div class="caption-holder">
-              <h5>Projects I have worked on <br> <a href="https://github.com/ashimdahal/Document-Scanner" target="_blank"> Document scanner and converter to .txt file</a></h5>
-         
-          </div>
-        
+    <div class="controlls">
+        <div class="control  control-1 active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
         </div>
-      </div>
-
+        <div class="control control-2 " data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control control-4" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control control-5" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
     </div>
 
-  </div>
-</div>
-   </div>
-
-
-  <div class="shaped">
-  <h2>
-    My favorite programming tools
-  </h2>
-  
-<div class="d-flex flex-wrap justify-content-end  align-content-stretch p-2" style="background: transparent;margin-left: 5vw;
-margin-top: 2vh;">
-    <div class=" p-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png" class="rounded" alt="Python"></div>
-    <div class="  p-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/1200px-Keras_logo.svg.png" alt = "Keras"class="rounded"></div>
-    <div class="  p-2"> <img src="https://pytorch.org/tutorials/_static/img/thumbnails/cropped/profiler.png" alt = "Keras"class="rounded"></div>
-  </div>
-
-    <div class="d-flex flex-wrap justify-content-end align-content-stretch p-2 bottom" style="background: transparent;margin-left: 9vw;
-    margin-top: 1vh;">
-    <div class="  p-2"> <img src="https://numfocus.org/wp-content/uploads/2016/07/pandas-logo-300.png" alt = "pandas"class="rounded"></div>
-    <div class="  p-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Created_with_Matplotlib-logo.svg/2048px-Created_with_Matplotlib-logo.svg.png" alt = "matplotlib"class="rounded"></div>
-    <div class="  p-2"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1915px-Tensorflow_logo.svg.png" alt = "Tensorflow_logo"class="rounded"></div>
-
-    
-
-  </div>
-  <div class="d-flex flex-wrap justify-content-end  align-content-stretch p-2" style="background:transparent;margin-left:8.7vw;">
-    <div class="  p-2"> <img src="https://user-images.githubusercontent.com/50221806/86498201-a8bd8680-bd39-11ea-9d08-66b610a8dc01.png"class="rounded" alt="numpy"></div>
-    <div class="  p-2"> <img src="https://3.bp.blogspot.com/-yvrV6MUueGg/ToICp0YIDPI/AAAAAAAAADg/SYKg4dWpyC43AAfrDwBTR0VYmYT0QshEgCPcBGAYYCw/s1600/OpenCV_Logo.png"class="rounded" alt="opencv"></div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
     </div>
 
-</div>
-
-
-</div>
-
-
-<div id="Certificates" style="width: 100vw;height: 90.8vh;">
-  <div id = "carouselExampleCaptions"class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators bottom-carousel">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-
-  </ol>
-  <div  class="carousel-inner">
-
-    <div id="certificate-caro" class="carousel-item active">
-      <div style="background-image: url('img/1.png');">
-        
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
-    </div>
-
- <div id="certificate-caro" class="carousel-item">
-      <div style="background-image: url('img/2.png');">
-        
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
-    </div> <div id="certificate-caro" class="carousel-item">
-      <div style="background-image: url('img/3.png');">
-        
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
-    </div> <div id="certificate-caro" class="carousel-item">
-      <div style="background-image: url('img/4.png');">
-        
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
-    </div> <div id="certificate-caro" class="carousel-item">
-      <div style="background-image: url('img/5.png');">
-        
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
-    </div> <div id="certificate-caro" class="carousel-item">
-      <div style="background-image: url('img/6.png');">
-        
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
-    </div> <div id="certificate-caro" class="carousel-item">
-      <div style="background-image: url('img/7.png');">
-        
-      </div>
-      <div class="carousel-caption d-none d-md-block">
-        
-      </div>
-    </div>
-
-  </div>
-
-
-  <a class="carousel-control-prev np-buttons" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next np-buttons" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="sr-only">Next</span>
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-
-  </a>
-</div>
-</div>
-
-
-    
-  </body>
-
-<script language="JavaScript" type="text/javascript">
-  $(document).ready(function(){
-    $('.carousel').carousel({
-      interval: 4000,
-    })
-    $(".carousel-indicators li").on('click', function(){
-    $(this).siblings().removeClass('active')
-    $(this).addClass('active');
-})
-  });    
-</script>  
+    <script src="app.js"></script>
+</body>
 </html>
