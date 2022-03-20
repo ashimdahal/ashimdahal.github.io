@@ -545,7 +545,10 @@ section {
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
-.blogs .blog .blog-text h4:hover {
+.blogs .blog .blog-text h4 a {
+  cursor: pointer;
+}
+.blogs .blog .blog-text h4 a:hover {
   color: var(--color-secondary);
 }
 .blogs .blog .blog-text p {

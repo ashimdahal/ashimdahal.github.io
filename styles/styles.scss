@@ -536,9 +536,15 @@ section{
                 margin-bottom: .7rem;
                 transition: all .4s ease-in-out;
                 cursor: pointer;
+                // &:hover{
+                //     color: var(--color-secondary);
+                // }
+               a{
+                cursor: pointer;
                 &:hover{
                     color: var(--color-secondary);
                 }
+               } 
             }
             p{
                 color: var(--color-grey-2);
