@@ -1,0 +1,6 @@
+Ashim Dahal is a passionate and results-driven Machine Learning Researcher with expertise in computer vision with Deep Learning, specializing on generative computer vision.
+
+His research interests include but not limited to stable diffusion, language guidance for vision models, multimodal systems, video understanding, parallel computing, 3D reconstruction, mesh understanding, vision transformers and zero-shot generalization for vision models.
+
+Since 2019, Ashim has been dedicated to researching and advancing his knowledge in the field of ML and DL, focusing specifically on SotA deep learning techniques. 
+

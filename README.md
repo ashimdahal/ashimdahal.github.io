@@ -1,8 +1,1 @@
-# credits
-
-All credits goes to : https://github.com/Maclinz/JS_CSS_PortfolioProject.
-
-
-A tutorial is there on https://freecodecamp.com to follow for this exact template.
-
-
+This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
