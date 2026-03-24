@@ -325,7 +325,7 @@ h2 {
   margin: 0;
   padding: 8px;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 0;
   background: #ffffff;
   aspect-ratio: 16 / 10;
   cursor: zoom-in;
@@ -590,7 +590,7 @@ h2 {
   width: 100%;
   max-height: 82vh;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 0;
   background: #0d1218;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
 }
