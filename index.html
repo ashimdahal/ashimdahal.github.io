@@ -5,27 +5,42 @@
     <title>Ashim Dahal</title>
     <meta name="author" content="Ashim Dahal">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260323">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,750&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260517">
   </head>
 
   <body>
+    <a class="skip-link" href="#research">Skip to research</a>
     <main class="page-shell">
+      <header class="site-header">
+        <a class="site-mark" href="#" aria-label="Ashim Dahal home">
+          <span class="site-mark__name">Ashim Dahal</span>
+          <span class="site-mark__tag">cv / multimodal ai</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#research">Research</a>
+          <a href="#news">News</a>
+          <a href="#miscellaneous">Misc</a>
+          <a href="data/AshimDahalCV.pdf">CV</a>
+        </nav>
+      </header>
+
       <section class="hero">
         <div class="hero__content">
           <p class="eyebrow">Computer Vision and Multimodal AI Researcher</p>
-          <h1 class="name">Ashim Dahal</h1>
+          <h1 class="name"><span>Ashim</span> <span>Dahal</span></h1>
           <p class="hero__lede">
-            I'm an Undergraduate Research Assistant at <a href="https://usm.edu">The University of Southern Mississippi</a> in Mississippi, USA. I work on the <a href="https://cil.usm.edu">Cyber Innovations Lab</a> advised by <a href="https://sites.google.com/view/nickrahimi/home">Dr. Nick Rahimi</a> mostly focusing on modern deep learning techniques on computer vision and multimodal systems.
+            I'm an undergraduate researcher at <a href="https://usm.edu">The University of Southern Mississippi</a>, working with <a class="bio-highlight" href="https://sites.google.com/view/nickrahimi/home">Dr. Nick Rahimi</a> in the <a href="https://cil.usm.edu">Cyber Innovations Lab</a> on computer vision, 3D/4D vision, and multimodal systems. I have also worked in collaboration with <a class="bio-highlight" href="https://sites.usm.edu/banerjee/index.html">Bikramjit Banerjee</a> and <a class="bio-highlight" href="https://scholar.google.com/citations?user=p4FzqnIAAAAJ&amp;hl=en">Rabab Abdelfattah</a>.
           </p>
           <div class="hero__copy">
             <p>
-              I was awarded a <strong>$5,500</strong> summer research grant in 2025 by the Drapeau Center for Undergraduate Research (DCUR) for my research on Gaussian Splatting. I also drafted the NASA EPSCoR project (PI: Dr. Rahimi) that got funded for 2025-2026 academic year for <strong>$51,000</strong>.
+              I like building systems that make visual reasoning cheaper, clearer, and easier to inspect: video QA, Gaussian Splatting, segmentation, image-caption evaluation, and model analysis.
             </p>
             <p>
-              I am also the Lead Organizer of the Google Developers Group (GDG) On Campus and the Research Liaison of the School of Computing Science and Computer Engineering's Student Ambassadors.
+              Outside research, I play bansuri, read literature, organize campus developer events, and occasionally write essays fast enough to win trouble.
             </p>
-            <p>
-              <strong><em>Trivia:</em></strong> I play bansuri and read literature. I also won the Eagles Write Award (best essay award) in 2023/24 for an essay I wrote in 45 minutes. I actively share my tech journey with over 3,000 organic followers on LinkedIn and 90+ on GitHub.</p>
           </div>
           <div class="contact-links">
             <a class="contact-pill" href="mailto:codeashim@gmail.com">Email</a>
@@ -45,6 +60,74 @@
         </aside>
       </section>
 
+      <section class="section news-section" id="news">
+        <div class="section-heading news-heading">
+          <div>
+            <p class="section-kicker">Recent Dispatches</p>
+            <h2>News</h2>
+          </div>
+          <p class="section-note">Selected updates in life and research, newest first.</p>
+        </div>
+
+        <div class="news-board" aria-label="Recent news and updates">
+          <div class="news-list" tabindex="0">
+            <!-- Add new updates here. Keep newest items first and use a short date label. -->
+            <article class="news-item">
+              <time datetime="2026-09">Fall 2026</time>
+              <p>Eagle SPUR Award winner.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-06">June 2026</time>
+              <p>Presenting 1 workshop paper in CVPR</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-05">May 2026</time>
+              <p>Funded for a Google I/O event.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-04">Apr 2026</time>
+              <p>DCUR Undergraduate Symposium Best Paper on Computational Approach winner.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-04">Apr 2026</time>
+              <p>US Semi-Finalist, Hult Prize.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2026-04">Apr 2026</time>
+              <p>Finalist, International Researcher of the year, USM.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2025-06">Summer 2025</time>
+              <p>Awarded a $5,500 DCUR summer research grant for Gaussian Splatting.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2025">Sept 2025</time>
+              <p>Drafted objectives for a $51,000 NASA EPSCoR-funded project led by Dr. Rahimi.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2025">Oct 2025</time>
+              <p>Became Lead Organizer of Google Developer Groups (GDG) On Campus at USM.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2025">Jan 2025</time>
+              <p>Became Research Liaison for the School of Computing Sciences and Computer Engineering Student Ambassadors.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2024">Oct 2024</time>
+              <p>Received a $500 Checkpoint award to build an XR application for dyslexia.</p>
+            </article>
+            <article class="news-item">
+              <time datetime="2022">2022</time>
+              <p>Won Best Local Project and Global Nomination at NASA Space Apps Challenge.</p>
+            </article>
+          </div>
+          <div class="news-scroll-cue" aria-hidden="true">
+            <span>scroll</span>
+            <span class="news-scroll-cue__arrow">↓</span>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="research">
         <div class="section-heading">
           <div>
@@ -52,7 +135,7 @@
             <h2>Research</h2>
           </div>
           <p class="section-note">
-            I'm interested in computer vision, 3D/4D vision, deep learning, generative AI, and robotics. Most of my research focuses on understanding scenes, analyzing deep learning techniques, and inferring meaningful information by tinkering with model architectures. Some of my computer vision works are <span class="highlight">highlighted</span>. Thumbnails can be hovered for a larger preview and clicked for a full lightbox view.
+            Selected work, ordered newest first. Rows with the acid side mark are computer vision and multimodal highlights; thumbnails open larger previews.
           </p>
         </div>
 
@@ -65,10 +148,6 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://povqa.github.io">POVQA: Preference-Optimized Video Question Answering with Rationales for Data Efficiency</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue project-card__venue--emphasis">Accepted in CVPR Workshop (Proceedings Track)</span>
-                <span class="project-card__year">2026</span>
-              </div>
               <p class="project-card__authors">
                 <strong>Ashim Dahal</strong>,
                 <span>Ankit Ghimire</span>,
@@ -76,6 +155,10 @@
                 <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
               </p>
               <p class="project-card__desc">Making video question answering possible on large context scenes with minimal input tokens.</p>
+              <div class="project-card__venue-row">
+                <span class="project-card__venue project-card__venue--emphasis">CVPR Workshop (Proceedings Track)</span>
+                <span class="project-card__year">2026</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://povqa.github.io">Project page</a>
                 <a href="https://arxiv.org/abs/2510.01009">arXiv</a>
@@ -91,19 +174,45 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://arxiv.org/abs/2603.17227">Adaptive Anchor Policies for Efficient 4D Gaussian Streaming</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue">arXiv</span>
-                <span class="project-card__year">2026</span>
-              </div>
               <p class="project-card__authors">
                 <strong>Ashim Dahal</strong>,
                 <a href="https://scholar.google.com/citations?user=p4FzqnIAAAAJ&amp;hl=en">Rabab Abdelfattah</a>,
                 <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
               </p>
               <p class="project-card__desc">We introduce an RL-based policy that selects anchor budgets and informative Gaussians for efficient 4D Gaussian streaming, improving the quality-runtime trade-off.</p>
+              <div class="project-card__venue-row project-card__venue-row--quiet">
+                <span class="project-card__venue">arXiv</span>
+                <span class="project-card__year">2026</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://arxiv.org/abs/2603.17227">arXiv</a>
                 <a href="https://arxiv.org/pdf/2603.17227">PDF</a>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="project-card project-card--featured">
+            <button class="project-card__media" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/clip_shift_nerf_r94_attention_sequence.mp4" data-full-poster="visual_resources/gifs/clip_shift_nerf_r94_attention_sequence.gif" data-caption="Embedding Shift Dissection on CLIP: Effects of Augmentations on VLM's Representation Learning" aria-label="Enlarge preview for Embedding Shift Dissection on CLIP">
+              <video autoplay muted loop playsinline preload="metadata" aria-label="Animated qualitative attention shift preview for Embedding Shift Dissection on CLIP">
+                <source src="visual_resources/videos/clip_shift_nerf_r94_attention_sequence.mp4" type="video/mp4">
+              </video>
+            </button>
+            <div class="project-card__body">
+              <h3 class="project-card__title"><a href="https://github.com/ashimdahal/clip-shift-analysis">Embedding Shift Dissection on CLIP: Effects of Augmentations on VLM's Representation Learning</a></h3>
+              <p class="project-card__authors">
+                <strong>Ashim Dahal</strong>,
+                <a href="https://saydulakbarmurad.com">Saydul Akbar Murad</a>,
+                <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
+              </p>
+              <p class="project-card__desc">A short paper on how CLIP representations shift under different augmentation strengths and types.</p>
+              <div class="project-card__venue-row">
+                <span class="project-card__venue project-card__venue--emphasis">CVPR Workshop (Proceedings Track)</span>
+                <span class="project-card__year">2025</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/ashimdahal/clip-shift-analysis">Project page</a>
+                <a href="https://arxiv.org/abs/2503.23495">arXiv</a>
               </div>
             </div>
           </article>
@@ -114,47 +223,23 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://arxiv.org/abs/2502.04346">Multi-Lingual Cyber Threat Detection in Tweets/X Using ML, DL, and LLM: A Comparative Analysis</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue project-card__venue--emphasis">IEEE Transactions on Computational Social Systems</span>
-                <span class="project-card__year">2025</span>
-                <span class="project-card__metric">Impact Factor 5.1</span>
-              </div>
               <p class="project-card__authors">
                 <a href="https://saydulakbarmurad.com">Saydul Akbar Murad</a>,
                 <strong>Ashim Dahal</strong>,
                 <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
               </p>
               <p class="project-card__desc">This paper proposes a new multilingual dataset and methodology for detecting cyber threats spread through posts on X.</p>
+              <div class="project-card__venue-row">
+                <span class="project-card__venue project-card__venue--emphasis">IEEE Transactions on Computational Social Systems</span>
+                <span class="project-card__year">2025</span>
+                <span class="project-card__metric">Impact Factor 5.1</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://arxiv.org/abs/2502.04346">arXiv</a>
               </div>
             </div>
           </article>
 
-          <article class="project-card project-card--featured">
-            <button class="project-card__media" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/clip_shift_nerf_r94_attention_sequence.mp4" data-full-poster="visual_resources/gifs/clip_shift_nerf_r94_attention_sequence.gif" data-caption="Embedding Shift Dissection on CLIP: Effects of Augmentations on VLM's Representation Learning" aria-label="Enlarge preview for Embedding Shift Dissection on CLIP">
-              <video autoplay muted loop playsinline preload="metadata" aria-label="Animated qualitative attention shift preview for Embedding Shift Dissection on CLIP">
-                <source src="visual_resources/videos/clip_shift_nerf_r94_attention_sequence.mp4" type="video/mp4">
-              </video>
-            </button>
-            <div class="project-card__body">
-              <h3 class="project-card__title"><a href="https://github.com/ashimdahal/clip-shift-analysis">Embedding Shift Dissection on CLIP: Effects of Augmentations on VLM's Representation Learning</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue project-card__venue--emphasis">CVPR Workshop (Proceedings Track)</span>
-                <span class="project-card__year">2025</span>
-              </div>
-              <p class="project-card__authors">
-                <strong>Ashim Dahal</strong>,
-                <a href="https://saydulakbarmurad.com">Saydul Akbar Murad</a>,
-                <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
-              </p>
-              <p class="project-card__desc">A short paper on how CLIP representations shift under different augmentation strengths and types.</p>
-              <div class="project-card__links">
-                <a href="https://github.com/ashimdahal/clip-shift-analysis">Project page</a>
-                <a href="https://arxiv.org/abs/2503.23495">arXiv</a>
-              </div>
-            </div>
-          </article>
 
           <article class="project-card project-card--featured">
             <button class="project-card__media" type="button" data-lightbox-trigger data-caption="Heuristical Comparison of Vision Transformers Against Convolutional Neural Networks for Semantic Segmentation on Remote Sensing Imagery" aria-label="Enlarge preview for Heuristical Comparison of Vision Transformers Against Convolutional Neural Networks">
@@ -162,17 +247,17 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://github.com/ashimdahal/ViT-vs-CNN-Image-Segmentation">Heuristical Comparison of Vision Transformers Against Convolutional Neural Networks for Semantic Segmentation on Remote Sensing Imagery</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue project-card__venue--emphasis">IEEE Sensors Journal</span>
-                <span class="project-card__year">2025</span>
-                <span class="project-card__metric">Impact Factor 4.5</span>
-              </div>
               <p class="project-card__authors">
                 <strong>Ashim Dahal</strong>,
                 <a href="https://saydulakbarmurad.com">Saydul Akbar Murad</a>,
                 <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
               </p>
               <p class="project-card__desc">A comparison of ViTs and CNNs on iSAID segmentation, including a loss function that helps a smaller CNN compete with a much larger ViT.</p>
+              <div class="project-card__venue-row">
+                <span class="project-card__venue project-card__venue--emphasis">IEEE Sensors Journal</span>
+                <span class="project-card__year">2025</span>
+                <span class="project-card__metric">Impact Factor 4.5</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://github.com/ashimdahal/ViT-vs-CNN-Image-Segmentation">Project page</a>
                 <a href="https://arxiv.org/abs/2411.09101">arXiv</a>
@@ -186,10 +271,6 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://arxiv.org/abs/2505.16180">Redemption Score: A Multi-Modal Evaluation Framework for Image Captioning via Distributional, Perceptual, and Linguistic Signal Triangulation</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue">arXiv</span>
-                <span class="project-card__year">2025</span>
-              </div>
               <p class="project-card__authors">
                 <strong>Ashim Dahal</strong>,
                 <span>Ankit Ghimire</span>,
@@ -197,6 +278,10 @@
                 <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
               </p>
               <p class="project-card__desc">A robust framework to evaluate image-text pairs under perceptual, semantic, pragmatic, and distributional alignment.</p>
+              <div class="project-card__venue-row project-card__venue-row--quiet">
+                <span class="project-card__venue">arXiv</span>
+                <span class="project-card__year">2025</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://arxiv.org/abs/2505.16180">arXiv</a>
               </div>
@@ -209,16 +294,16 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://arxiv.org/abs/2505.13936">EEG-to-Text Translation: A Model for Deciphering Human Brain Activity</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue">arXiv</span>
-                <span class="project-card__year">2025</span>
-              </div>
               <p class="project-card__authors">
                 <a href="https://saydulakbarmurad.com">Saydul Akbar Murad</a>,
                 <strong>Ashim Dahal</strong>,
                 <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
               </p>
               <p class="project-card__desc">We propose a new model, R1 Translator, which aims to improve the performance of EEG-to-text decoding.</p>
+              <div class="project-card__venue-row project-card__venue-row--quiet">
+                <span class="project-card__venue">arXiv</span>
+                <span class="project-card__year">2025</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://arxiv.org/abs/2505.13936">arXiv</a>
               </div>
@@ -231,16 +316,16 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://github.com/ashimdahal/Study-of-Convolutional-Kolmogorov-Arnold-networks">Efficiency Bottlenecks of Convolutional Kolmogorov-Arnold Networks: A Comprehensive Scrutiny with ImageNet, AlexNet, LeNet and Tabular Classification</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue">arXiv</span>
-                <span class="project-card__year">2025</span>
-              </div>
               <p class="project-card__authors">
                 <strong>Ashim Dahal</strong>,
                 <a href="https://saydulakbarmurad.com">Saydul Akbar Murad</a>,
                 <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
               </p>
               <p class="project-card__desc">A study of convolutional Kolmogorov-Arnold networks across ImageNet, MNIST, and tabular classification settings.</p>
+              <div class="project-card__venue-row project-card__venue-row--quiet">
+                <span class="project-card__venue">arXiv</span>
+                <span class="project-card__year">2025</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://github.com/ashimdahal/Study-of-Convolutional-Kolmogorov-Arnold-networks">Project page</a>
                 <a href="https://arxiv.org/abs/2501.15757">arXiv</a>
@@ -254,16 +339,16 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://github.com/ashimdahal/zero_day_ATTACK_detection">Analysis of Zero Day Attack Detection Using MLP and XAI</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue project-card__venue--emphasis">Security and Management</span>
-                <span class="project-card__year">2024</span>
-              </div>
               <p class="project-card__authors">
                 <strong>Ashim Dahal</strong>,
                 <a href="https://www.linkedin.com/in/prabin-bajgai/">Prabin Bajgai</a>,
                 <a href="https://sites.google.com/view/nickrahimi/home">Nick Rahimi</a>
               </p>
               <p class="project-card__desc">Analyzing zero-day cyber attacks with MLP and SHAP using a weighted loss that prevents the model from overfitting to the majority class.</p>
+              <div class="project-card__venue-row">
+                <span class="project-card__venue project-card__venue--emphasis">Security and Management</span>
+                <span class="project-card__year">2024</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://github.com/ashimdahal/zero_day_ATTACK_detection">Project page</a>
                 <a href="https://arxiv.org/abs/2501.16638">arXiv</a>
@@ -277,15 +362,15 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://europepmc.org/article/ppr/ppr556796">Predicting Handwritten Devanagari Characters using modified-LeNet Model Architecture</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue project-card__venue--emphasis">Europe PMC</span>
-                <span class="project-card__year">2022</span>
-              </div>
               <p class="project-card__authors">
                 <strong>Ashim Dahal</strong>,
                 <a href="https://sushankattel.com.np">Sushan Kattel</a>
               </p>
               <p class="project-card__desc">We fine-tuned a LeNet-style CNN to perform OCR on handwritten Devanagari characters, which are more structurally complex than Roman letters.</p>
+              <div class="project-card__venue-row project-card__venue-row--quiet">
+                <span class="project-card__venue">Europe PMC</span>
+                <span class="project-card__year">2022</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://europepmc.org/article/ppr/ppr556796">Paper</a>
               </div>
@@ -298,12 +383,12 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://github.com/ashimdahal/Chicken-Recipe-Generator.git">Would you own a ROBOT?: A detailed research on public response to the nooks and crannies of owning a robot.</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue project-card__venue--emphasis">National Conference on Science and Technology</span>
-                <span class="project-card__year">2022</span>
-              </div>
               <p class="project-card__authors"><strong>Ashim Dahal</strong></p>
               <p class="project-card__desc">A survey of 300+ individuals about privacy, labor, mainstream adoption, and the features people expect before robots become household companions.</p>
+              <div class="project-card__venue-row project-card__venue-row--quiet">
+                <span class="project-card__venue">National Conference on Science and Technology</span>
+                <span class="project-card__year">2022</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://github.com/ashimdahal/Chicken-Recipe-Generator.git">Project page</a>
                 <a href="https://www.researchsquare.com/article/rs-1716492/v2">Paper</a>
@@ -317,10 +402,6 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://github.com/ashimdahal/jelly">Effectiveness of Native Language for Conversational Bots</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue project-card__venue--emphasis">Europe PMC</span>
-                <span class="project-card__year">2022</span>
-              </div>
               <p class="project-card__authors">
                 <strong>Ashim Dahal</strong>,
                 <a href="https://anuj-khadka.com.np/">Anuj Khadka</a>,
@@ -328,6 +409,10 @@
                 <a href="https://glocalteenhero.com/aashish-shah-an-enthusiastic-edu-technologist-2/">Aashish Shah</a>
               </p>
               <p class="project-card__desc">We created Jelly, the first Romanized Nepali chatbot using BlenderBot, and studied the efficacy of native language in mental health conversational systems.</p>
+              <div class="project-card__venue-row project-card__venue-row--quiet">
+                <span class="project-card__venue">Europe PMC</span>
+                <span class="project-card__year">2022</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://github.com/ashimdahal/jelly">Project page</a>
                 <a href="https://europepmc.org/article/ppr/ppr561933">Paper</a>
@@ -341,12 +426,12 @@
             </button>
             <div class="project-card__body">
               <h3 class="project-card__title"><a href="https://github.com/ashimdahal/Chicken-Recipe-Generator.git">Do you "Go big or go home" with Neural Networks?</a></h3>
-              <div class="project-card__venue-row">
-                <span class="project-card__venue project-card__venue--emphasis">Research Square</span>
-                <span class="project-card__year">2022</span>
-              </div>
               <p class="project-card__authors"><strong>Ashim Dahal</strong></p>
               <p class="project-card__desc">Using a self-curated chicken recipe dataset, I trained a GRU-based generator and studied how different preprocessing choices changed the generated recipes.</p>
+              <div class="project-card__venue-row project-card__venue-row--quiet">
+                <span class="project-card__venue">Research Square</span>
+                <span class="project-card__year">2022</span>
+              </div>
               <div class="project-card__links">
                 <a href="https://github.com/ashimdahal/Chicken-Recipe-Generator.git">Project page</a>
                 <a href="https://www.researchsquare.com/article/rs-1716492/v2">Paper</a>
