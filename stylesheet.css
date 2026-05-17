@@ -426,6 +426,24 @@ h2 {
   font-weight: 700;
 }
 
+.preview-note {
+  display: inline-block;
+  padding: 0.04em 0.42em;
+  border: 1px solid rgba(42, 36, 28, 0.34);
+  background: rgba(204, 228, 92, 0.58);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.86em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transform: rotate(-0.5deg);
+}
+
+.preview-note::before {
+  content: "zoom: ";
+  color: var(--accent-dark);
+}
+
 .section-note code {
   padding: 0.05em 0.28em;
   border: 1px solid rgba(42, 36, 28, 0.22);
