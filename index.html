@@ -18,6 +18,7 @@
         <a class="site-mark" href="#" aria-label="Ashim Dahal home">
           <span class="site-mark__name">Ashim Dahal</span>
           <span class="site-mark__tag">cv / multimodal ai</span>
+          <span class="pixel-cat pixel-cat--mark" aria-hidden="true"></span>
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="#research">Research</a>
@@ -64,9 +65,17 @@
         <div class="section-heading news-heading">
           <div>
             <p class="section-kicker">Recent Dispatches</p>
-            <h2>News</h2>
+            <div class="news-title-row">
+              <h2>News</h2>
+              <div class="news-cat" aria-hidden="true">
+                <span class="news-cat__head"></span>
+                <span class="news-cat__paper"></span>
+              </div>
+            </div>
           </div>
-          <p class="section-note">Selected updates in life and research, newest first.</p>
+          <div class="news-heading__side">
+            <p class="section-note">Selected updates in life and research, newest first.</p>
+          </div>
         </div>
 
         <div class="news-board" aria-label="Recent news and updates">
@@ -132,7 +141,15 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">Selected Publications</p>
-            <h2>Research</h2>
+            <div class="research-title-row">
+              <h2>Research</h2>
+              <div class="research-cat" aria-hidden="true">
+                <span class="research-cat__screen"></span>
+                <span class="research-cat__head"></span>
+                <span class="research-cat__paw"></span>
+                <span class="research-cat__keyboard"></span>
+              </div>
+            </div>
           </div>
           <p class="section-note">
             Selected work, ordered newest first. Rows with the acid side mark are computer vision and multimodal highlights; <span class="preview-note">thumbnails open larger previews</span>.
@@ -487,6 +504,7 @@
       </section>
 
       <footer class="site-footer">
+        <span class="pixel-cat pixel-cat--footer" aria-hidden="true"></span>
         This website is adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
       </footer>
     </main>
