@@ -1,6 +1,5 @@
-Ashim Dahal is a passionate and results-driven Machine Learning Researcher with expertise in computer vision with Deep Learning, specializing on generative computer vision.
+I'm an Undergraduate Researcher in Computer Vision & Multimodal Learning with expertise in deep learning, specializing in efficient vision-language models and neural rendering.
 
-His research interests include but not limited to stable diffusion, language guidance for vision models, multimodal systems, video understanding, parallel computing, 3D reconstruction, mesh understanding, vision transformers and zero-shot generalization for vision models.
+My research interests include computer vision, vision-language models, 3D reconstruction, video understanding, multimodal learning, neural rendering (Gaussian Splatting, NeRFs), efficient deep learning, and vision transformers.
 
-Since 2019, Ashim has been dedicated to researching and advancing his knowledge in the field of ML and DL, focusing specifically on SotA deep learning techniques. 
-
+Since 2023, I've been dedicated to research and advancing my knowledge in computer vision and multimodal AI, focusing on state-of-the-art deep learning techniques at the Cyber Innovations Lab, University of Southern Mississippi.
