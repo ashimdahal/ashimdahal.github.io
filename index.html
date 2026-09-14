@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,750&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260517">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260914">
   </head>
 
   <body>
@@ -21,6 +21,7 @@
           <span class="pixel-cat pixel-cat--mark" aria-hidden="true"></span>
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#research-map">Map</a>
           <a href="#research">Research</a>
           <a href="#news">News</a>
           <a href="#miscellaneous">Misc</a>
@@ -48,7 +49,7 @@
             <a class="contact-pill" href="data/AshimDahalResume.pdf">Resume</a>
             <a class="contact-pill" href="data/AshimDahalCV.pdf">CV</a>
             <a class="contact-pill" href="data/ashimdahal.txt">Bio</a>
-            <a class="contact-pill" href="https://scholar.google.com/citations?hl=en&user=Nt9K4nsAAAAJ&view_op=list_works&sortby=pubdate">Scholar</a>
+            <a class="contact-pill" href="https://scholar.google.com/citations?hl=en&amp;user=Nt9K4nsAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Scholar</a>
             <a class="contact-pill" href="https://github.com/ashimdahal/">GitHub</a>
             <a class="contact-pill" href="https://www.linkedin.com/in/ashimdahal/">LinkedIn</a>
           </div>
@@ -61,6 +62,233 @@
         </aside>
       </section>
 
+      <section class="research-world" id="research-map" aria-labelledby="research-world-title">
+        <header class="research-world__header">
+          <div>
+            <p class="section-kicker">A visual research map</p>
+            <h2 id="research-world-title">The research cat tree.</h2>
+          </div>
+          <p class="research-world__hint">hover / tap a toy to inspect the paper</p>
+        </header>
+
+        <div class="cat-tree-scroll" tabindex="0" aria-label="Scrollable cat-tree map of recognition, reconstruction, and reasoning research">
+          <span class="cat-tree-scroll__hint" aria-hidden="true">← drag to explore →</span>
+          <div class="cat-tree">
+            <svg class="cat-tree__art" viewBox="0 0 1100 620" aria-hidden="true">
+              <defs>
+                <linearGradient id="cat-sky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#f8f2e5"></stop>
+                  <stop offset="100%" stop-color="#e6eadb"></stop>
+                </linearGradient>
+                <pattern id="cat-sisal" width="8" height="8" patternUnits="userSpaceOnUse">
+                  <rect width="8" height="8" fill="#c99c62"></rect>
+                  <path d="M0 2 H8 M0 6 H8" stroke="#8e653b" stroke-width="0.8" opacity="0.55"></path>
+                </pattern>
+                <pattern id="cat-wood" width="22" height="12" patternUnits="userSpaceOnUse">
+                  <rect width="22" height="12" fill="#ddb77c"></rect>
+                  <path d="M0 6 C6 3 13 9 22 5" fill="none" stroke="#a87542" stroke-width="0.8" opacity="0.48"></path>
+                </pattern>
+              </defs>
+
+              <rect class="tree-sky" width="1100" height="620" fill="url(#cat-sky)"></rect>
+              <circle class="tree-sun" cx="1010" cy="82" r="35"></circle>
+              <path class="tree-cloud" d="M24 100 C47 70 77 79 88 99 C104 75 144 82 148 111 H24 Z"></path>
+              <path class="tree-cloud tree-cloud--two" d="M708 91 C726 67 754 73 764 91 C780 69 811 78 817 104 H708 Z"></path>
+              <path class="tree-hill tree-hill--back" d="M0 454 C127 409 238 465 346 439 C491 404 579 462 712 427 C850 392 962 450 1100 406 V620 H0 Z"></path>
+              <path class="tree-hill" d="M0 512 C151 476 239 529 375 500 C533 467 634 531 774 494 C910 458 1006 507 1100 477 V620 H0 Z"></path>
+
+              <g class="cat-furniture">
+                <ellipse class="tree-shadow" cx="602" cy="574" rx="430" ry="22"></ellipse>
+                <path class="tree-base" d="M241 548 H1010 L1027 578 H225 Z"></path>
+
+                <rect class="tree-post" x="312" y="389" width="35" height="169" rx="8"></rect>
+                <rect class="tree-post" x="493" y="252" width="39" height="306" rx="9"></rect>
+                <rect class="tree-post" x="710" y="184" width="39" height="374" rx="9"></rect>
+                <rect class="tree-post" x="908" y="92" width="38" height="466" rx="9"></rect>
+
+                <path class="tree-platform" d="M248 375 H447 L458 397 H236 Z"></path>
+                <path class="tree-platform" d="M405 295 H641 L651 317 H394 Z"></path>
+                <path class="tree-platform" d="M624 218 H847 L858 240 H612 Z"></path>
+                <path class="tree-platform" d="M817 126 H1062 L1073 148 H805 Z"></path>
+                <path class="tree-platform" d="M530 486 H799 L810 508 H518 Z"></path>
+
+                <g class="tree-cubby tree-cubby--anchor">
+                  <path d="M358 382 H516 V498 H358 Z"></path>
+                  <path class="tree-cubby__roof" d="M346 382 L433 330 L528 382 Z"></path>
+                  <circle class="tree-cubby__door" cx="433" cy="433" r="36"></circle>
+                </g>
+                <g class="tree-cubby tree-cubby--twin">
+                  <path d="M767 414 H934 V535 H767 Z"></path>
+                  <path class="tree-cubby__roof" d="M753 414 L847 359 L949 414 Z"></path>
+                  <path class="tree-cubby__door" d="M813 535 V489 C813 445 888 445 888 489 V535"></path>
+                </g>
+
+                <path class="tree-ramp" d="M550 486 L705 317"></path>
+                <path class="tree-ramp-line" d="M571 464 L587 481 M600 432 L616 450 M629 400 L646 418 M658 368 L675 386 M687 336 L704 354"></path>
+
+                <g class="tree-under-construction">
+                  <path d="M951 92 V37 H1038 M1038 37 V126"></path>
+                  <path d="M937 36 H1053"></path>
+                  <circle cx="1038" cy="37" r="4"></circle>
+                </g>
+              </g>
+
+              <path class="reasoning-yarn" d="M739 279 C791 317 835 244 880 277 C923 308 889 370 950 397 C1000 419 1035 373 1075 403"></path>
+              <path class="reasoning-yarn reasoning-yarn--loose" d="M785 190 C772 241 812 247 841 220 C863 198 899 213 899 243"></path>
+
+              <g transform="translate(-18 362) scale(0.86)">
+                <g class="scene-cat scene-cat--recognition">
+                  <path class="cat-tail" d="M231 160 C280 155 284 119 256 114 C241 111 239 128 251 130"></path>
+                  <path class="cat-body" d="M149 116 C132 129 128 168 146 181 H232 C244 167 237 129 220 116 Z"></path>
+                  <path class="cat-head" d="M143 68 L151 39 L171 57 C181 52 198 52 207 58 L230 40 L233 75 C242 92 231 121 190 123 C151 124 135 94 143 68 Z"></path>
+                  <path class="cat-ear-line" d="M153 51 L158 66 M220 52 L214 66"></path>
+                  <circle class="cat-eye" cx="169" cy="83" r="3.5"></circle>
+                  <circle class="cat-eye" cx="207" cy="83" r="3.5"></circle>
+                  <path class="cat-face" d="M185 92 L190 96 L195 92 M190 96 V102 M190 102 C184 106 180 104 178 101 M190 102 C196 106 201 104 203 101"></path>
+                  <path class="cat-whisker" d="M174 96 L143 91 M174 102 L140 105 M206 96 L237 91 M206 102 L240 105"></path>
+                  <path class="cat-paw cat-paw--reach" d="M157 129 C143 133 132 142 119 148"></path>
+                  <path class="cat-paw" d="M219 132 C227 146 231 158 231 178"></path>
+                  <path class="cat-feet" d="M144 181 C144 171 161 169 169 181 M209 181 C214 169 232 171 232 181"></path>
+                </g>
+              </g>
+
+              <g transform="translate(307 143) scale(0.78)">
+                <g class="scene-cat scene-cat--reconstruction">
+                  <path class="cat-tail" d="M248 159 C292 151 289 120 270 119 C253 118 249 132 260 137"></path>
+                  <path class="cat-body" d="M170 119 C156 134 155 168 172 181 H247 C260 163 250 129 235 117 Z"></path>
+                  <path class="cat-head" d="M166 71 L176 42 L195 59 C205 54 220 54 229 59 L251 43 L253 77 C260 95 247 120 211 122 C175 123 158 96 166 71 Z"></path>
+                  <path class="cat-ear-line" d="M178 53 L182 67 M242 54 L236 68"></path>
+                  <circle class="cat-eye" cx="191" cy="84" r="3.5"></circle>
+                  <circle class="cat-eye" cx="229" cy="84" r="3.5"></circle>
+                  <path class="cat-face" d="M206 93 L211 97 L216 93 M211 97 V103 M211 103 C205 107 201 105 199 102 M211 103 C217 107 222 105 224 102"></path>
+                  <path class="cat-whisker" d="M193 97 L162 92 M193 103 L159 106 M229 97 L259 92 M229 103 L262 106"></path>
+                  <path class="cat-paw cat-paw--hammer" d="M177 130 C163 133 151 143 139 149"></path>
+                  <path class="cat-paw" d="M236 132 C245 149 246 163 245 179"></path>
+                  <path class="cat-feet" d="M171 181 C173 170 189 169 197 181 M222 181 C229 170 246 171 247 181"></path>
+                  <path class="builder-hat" d="M175 63 C184 42 233 42 246 63 M167 64 H255"></path>
+                  <g class="builder-hammer">
+                    <path d="M135 143 L112 169"></path>
+                    <path d="M98 156 L117 173"></path>
+                  </g>
+                </g>
+              </g>
+
+              <g transform="translate(653 49) scale(0.77)">
+                <g class="scene-cat scene-cat--reasoning">
+                  <path class="cat-tail" d="M220 158 C268 161 283 132 269 119 C256 107 238 119 247 130"></path>
+                  <path class="cat-body" d="M129 119 C115 135 115 168 131 181 H218 C229 163 220 129 204 117 Z"></path>
+                  <path class="cat-head" d="M125 70 L134 41 L154 58 C164 53 180 53 189 59 L211 41 L213 76 C222 94 209 120 170 122 C133 123 117 96 125 70 Z"></path>
+                  <path class="cat-ear-line" d="M136 52 L141 67 M201 53 L195 67"></path>
+                  <circle class="cat-eye" cx="151" cy="83" r="3.5"></circle>
+                  <circle class="cat-eye" cx="188" cy="83" r="3.5"></circle>
+                  <path class="cat-face" d="M165 92 L170 96 L175 92 M170 96 V102 M170 102 C164 106 160 104 158 101 M170 102 C176 106 181 104 183 101"></path>
+                  <path class="cat-whisker" d="M153 96 L122 91 M153 102 L119 105 M189 96 L220 91 M189 102 L223 105"></path>
+                  <path class="cat-paw cat-paw--bat" d="M135 131 C123 136 116 146 109 157"></path>
+                  <path class="cat-paw" d="M205 132 C214 148 217 164 216 179"></path>
+                  <path class="cat-feet" d="M130 181 C132 171 149 169 157 181 M193 181 C199 170 217 171 218 181"></path>
+                </g>
+              </g>
+
+              <g class="scene-scraps">
+                <path d="M265 548 L283 528 L300 548 Z"></path>
+                <path d="M1019 548 L1034 529 L1051 548 Z"></path>
+                <path d="M560 131 L570 116 L581 132"></path>
+              </g>
+            </svg>
+
+            <div class="cat-tree__chapter cat-tree__chapter--recognition">
+              <span>01</span>
+              <h3>Recognition</h3>
+            </div>
+            <div class="cat-tree__chapter cat-tree__chapter--reconstruction">
+              <span>02</span>
+              <h3>Reconstruction</h3>
+            </div>
+            <div class="cat-tree__chapter cat-tree__chapter--reasoning">
+              <span>03</span>
+              <h3>Reasoning</h3>
+            </div>
+
+            <div class="research-node node--clip node--recognition">
+              <button class="research-node__trigger" type="button" aria-describedby="paper-clip-details">
+                <span class="toy toy--mouse" aria-hidden="true"><i></i></span>
+                <span class="research-node__title">Embedding Shift<br>on CLIP</span>
+              </button>
+              <div class="research-node__popover" id="paper-clip-details" role="tooltip">
+                <span class="research-node__venue">CVPRW · 2025</span>
+                <strong>Embedding Shift Dissection on CLIP: Effects of Augmentations on VLM’s Representation Learning</strong>
+                <p>Tracks how image perturbations reorganize CLIP’s attention and representation space.</p>
+                <a href="https://arxiv.org/abs/2503.23495">open paper ↗</a>
+              </div>
+            </div>
+
+            <div class="research-node node--segmentation node--recognition">
+              <button class="research-node__trigger" type="button" aria-describedby="paper-segmentation-details">
+                <span class="toy toy--mouse toy--mouse-blue" aria-hidden="true"><i></i></span>
+                <span class="research-node__title">ViT vs. CNN<br>Segmentation</span>
+              </button>
+              <div class="research-node__popover" id="paper-segmentation-details" role="tooltip">
+                <span class="research-node__venue">IEEE Sensors Journal</span>
+                <strong>Heuristical Comparison of Vision Transformers Against Convolutional Neural Networks for Semantic Segmentation on Remote Sensing Imagery</strong>
+                <p>A weighted-loss lightweight U-Net approaches a much larger ViT on remote-sensing segmentation.</p>
+                <a href="https://arxiv.org/abs/2411.09101">open paper ↗</a>
+              </div>
+            </div>
+
+            <div class="research-node node--anchor node--reconstruction">
+              <button class="research-node__trigger" type="button" aria-describedby="paper-anchor-details">
+                <span class="toy toy--cubby" aria-hidden="true"><i></i></span>
+                <span class="research-node__title">Which Gaussians<br>do you pick?</span>
+              </button>
+              <div class="research-node__popover" id="paper-anchor-details" role="tooltip">
+                <span class="research-node__venue">arXiv · 2026</span>
+                <strong>Does Anchor Selection Matter in 4D Gaussian Streaming?</strong>
+                <p>Studies hand-designed and learned anchor policies for faster, higher-fidelity dynamic Gaussian streaming.</p>
+                <a href="https://arxiv.org/abs/2603.17227">open paper ↗</a>
+              </div>
+            </div>
+
+            <div class="research-node node--twinsim node--reconstruction">
+              <button class="research-node__trigger" type="button" aria-describedby="paper-twinsim-details">
+                <span class="toy toy--cubby toy--cubby-blue" aria-hidden="true"><i></i></span>
+                <span class="research-node__title">TwinSim</span>
+              </button>
+              <div class="research-node__popover" id="paper-twinsim-details" role="tooltip">
+                <span class="research-node__venue">under embargo · 2026</span>
+                <strong>TwinSim: A Digital Twin based Framework for Sim2Real Robot Policy Training</strong>
+                <p>Pairs Gaussian scene views with a low-poly physics twin for embodied policy learning.</p>
+                <a href="#twinsim">view project ↓</a>
+              </div>
+            </div>
+
+            <div class="research-node node--povqa node--reasoning">
+              <button class="research-node__trigger" type="button" aria-describedby="paper-povqa-details">
+                <span class="toy toy--yarn" aria-hidden="true"><i></i></span>
+                <span class="research-node__title">POVQA</span>
+              </button>
+              <div class="research-node__popover" id="paper-povqa-details" role="tooltip">
+                <span class="research-node__venue">CVPRW · 2026</span>
+                <strong>POVQA: Preference-Optimized Video Question Answering with Rationales for Data Efficiency</strong>
+                <p>Uses compact video evidence and curated reasoning traces for long-context Video-QA.</p>
+                <a href="https://arxiv.org/abs/2510.01009">open paper ↗</a>
+              </div>
+            </div>
+
+            <div class="research-node node--redemption node--reasoning">
+              <button class="research-node__trigger" type="button" aria-describedby="paper-redemption-details">
+                <span class="toy toy--yarn toy--yarn-blue" aria-hidden="true"><i></i></span>
+                <span class="research-node__title">Redemption<br>Score</span>
+              </button>
+              <div class="research-node__popover" id="paper-redemption-details" role="tooltip">
+                <span class="research-node__venue">IEEE Transactions on Multimedia · 2026</span>
+                <strong>Redemption Score: A Multi-Modal Evaluation Framework for Image Captioning via Distributional, Perceptual, and Linguistic Signal Triangulation</strong>
+                <p>Triangulates visual, linguistic, and distributional signals to evaluate image–text alignment.</p>
+                <a href="https://arxiv.org/abs/2505.16180">open paper ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section news-section" id="news">
         <div class="section-heading news-heading">
           <div>
@@ -163,7 +391,7 @@
         <div class="research-grid">
 
 
-          <article class="project-card project-card--featured">
+          <article class="project-card project-card--featured" id="twinsim">
             <button class="project-card__media" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/twin_sim.mp4" data-caption="Does Anchor Selection Matter in 4D Gaussian Streaming?" aria-label="Enlarge preview for Adaptive Anchor Policies for Efficient 4D Gaussian Streaming">
               <video autoplay muted loop playsinline preload="metadata" aria-label="Project Teaser for Twin Sim">
                 <source src="visual_resources/videos/twin_sim.mp4" type="video/mp4">
