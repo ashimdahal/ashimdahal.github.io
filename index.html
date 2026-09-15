@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,750&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260914">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260914b">
   </head>
 
   <body>
@@ -62,19 +62,11 @@
         </aside>
       </section>
 
-      <section class="research-world" id="research-map" aria-labelledby="research-world-title">
-        <header class="research-world__header">
-          <div>
-            <p class="section-kicker">A visual research map</p>
-            <h2 id="research-world-title">The research cat tree.</h2>
-          </div>
-          <p class="research-world__hint">hover / tap a toy to inspect the paper</p>
-        </header>
-
+      <section class="research-world" id="research-map" aria-label="The research cat tree">
         <div class="cat-tree-scroll" tabindex="0" aria-label="Scrollable cat-tree map of recognition, reconstruction, and reasoning research">
           <span class="cat-tree-scroll__hint" aria-hidden="true">← drag to explore →</span>
           <div class="cat-tree">
-            <svg class="cat-tree__art" viewBox="0 0 1100 620" aria-hidden="true">
+            <svg class="cat-tree__art" viewBox="0 0 1100 620" preserveAspectRatio="none" aria-hidden="true">
               <defs>
                 <linearGradient id="cat-sky" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0%" stop-color="#f8f2e5"></stop>
@@ -135,6 +127,21 @@
 
               <path class="reasoning-yarn" d="M739 279 C791 317 835 244 880 277 C923 308 889 370 950 397 C1000 419 1035 373 1075 403"></path>
               <path class="reasoning-yarn reasoning-yarn--loose" d="M785 190 C772 241 812 247 841 220 C863 198 899 213 899 243"></path>
+
+              <g class="cat-teaser">
+                <path class="cat-teaser__rod" d="M764 166 L901 82"></path>
+                <path class="cat-teaser__string" d="M901 82 C932 155 870 201 884 266"></path>
+                <path class="cat-teaser__feather" d="M884 266 C870 251 854 258 858 272 C862 285 879 283 884 266 Z"></path>
+                <path class="cat-teaser__feather-line" d="M860 271 L884 266"></path>
+              </g>
+
+              <g class="cat-wheel">
+                <circle class="cat-wheel__rim" cx="1019" cy="468" r="64"></circle>
+                <circle class="cat-wheel__track" cx="1019" cy="468" r="52"></circle>
+                <circle class="cat-wheel__hub" cx="1019" cy="468" r="6"></circle>
+                <path class="cat-wheel__spokes" d="M1019 416 V520 M967 468 H1071 M982 431 L1056 505 M1056 431 L982 505"></path>
+                <path class="cat-wheel__stand" d="M985 538 H1053 M996 521 L987 538 M1042 521 L1051 538"></path>
+              </g>
 
               <g transform="translate(-18 362) scale(0.86)">
                 <g class="scene-cat scene-cat--recognition">
@@ -197,15 +204,15 @@
             </svg>
 
             <div class="cat-tree__chapter cat-tree__chapter--recognition">
-              <span>01</span>
+              <span class="cat-tree__paw-count" aria-hidden="true"><i></i></span>
               <h3>Recognition</h3>
             </div>
             <div class="cat-tree__chapter cat-tree__chapter--reconstruction">
-              <span>02</span>
+              <span class="cat-tree__paw-count" aria-hidden="true"><i></i><i></i></span>
               <h3>Reconstruction</h3>
             </div>
             <div class="cat-tree__chapter cat-tree__chapter--reasoning">
-              <span>03</span>
+              <span class="cat-tree__paw-count" aria-hidden="true"><i></i><i></i><i></i></span>
               <h3>Reasoning</h3>
             </div>
 
@@ -218,7 +225,10 @@
                 <span class="research-node__venue">CVPRW · 2025</span>
                 <strong>Embedding Shift Dissection on CLIP: Effects of Augmentations on VLM’s Representation Learning</strong>
                 <p>Tracks how image perturbations reorganize CLIP’s attention and representation space.</p>
-                <a href="https://arxiv.org/abs/2503.23495">open paper ↗</a>
+                <div class="research-node__actions">
+                  <button class="research-node__preview" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/clip_shift_nerf_r94_attention_sequence.mp4" data-full-poster="visual_resources/gifs/clip_shift_nerf_r94_attention_sequence.gif" data-alt="Animated CLIP attention shift preview" data-caption="Embedding Shift Dissection on CLIP">watch sample ▷</button>
+                  <a href="https://arxiv.org/abs/2503.23495">paper ↗</a>
+                </div>
               </div>
             </div>
 
@@ -231,7 +241,10 @@
                 <span class="research-node__venue">IEEE Sensors Journal</span>
                 <strong>Heuristical Comparison of Vision Transformers Against Convolutional Neural Networks for Semantic Segmentation on Remote Sensing Imagery</strong>
                 <p>A weighted-loss lightweight U-Net approaches a much larger ViT on remote-sensing segmentation.</p>
-                <a href="https://arxiv.org/abs/2411.09101">open paper ↗</a>
+                <div class="research-node__actions">
+                  <button class="research-node__preview" type="button" data-lightbox-trigger data-full-type="image" data-full-src="visual_resources/images/vitvcnn.png" data-alt="Vision Transformer and CNN segmentation comparison" data-caption="ViT versus CNN semantic segmentation on remote-sensing imagery">view sample ▷</button>
+                  <a href="https://arxiv.org/abs/2411.09101">paper ↗</a>
+                </div>
               </div>
             </div>
 
@@ -244,7 +257,10 @@
                 <span class="research-node__venue">arXiv · 2026</span>
                 <strong>Does Anchor Selection Matter in 4D Gaussian Streaming?</strong>
                 <p>Studies hand-designed and learned anchor policies for faster, higher-fidelity dynamic Gaussian streaming.</p>
-                <a href="https://arxiv.org/abs/2603.17227">open paper ↗</a>
+                <div class="research-node__actions">
+                  <button class="research-node__preview" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/anchor_policies.mp4" data-alt="4D Gaussian anchor policy preview" data-caption="Does Anchor Selection Matter in 4D Gaussian Streaming?">watch sample ▷</button>
+                  <a href="https://arxiv.org/abs/2603.17227">paper ↗</a>
+                </div>
               </div>
             </div>
 
@@ -257,33 +273,42 @@
                 <span class="research-node__venue">under embargo · 2026</span>
                 <strong>TwinSim: A Digital Twin based Framework for Sim2Real Robot Policy Training</strong>
                 <p>Pairs Gaussian scene views with a low-poly physics twin for embodied policy learning.</p>
-                <a href="#twinsim">view project ↓</a>
+                <div class="research-node__actions">
+                  <button class="research-node__preview" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/twin_sim.mp4" data-alt="TwinSim digital twin preview" data-caption="TwinSim: a Gaussian-scene digital twin for sim-to-real policy training">watch sample ▷</button>
+                  <a href="#twinsim">project ↓</a>
+                </div>
               </div>
             </div>
 
             <div class="research-node node--povqa node--reasoning">
               <button class="research-node__trigger" type="button" aria-describedby="paper-povqa-details">
-                <span class="toy toy--yarn" aria-hidden="true"><i></i></span>
+                <span class="toy toy--teaser" aria-hidden="true"><i></i></span>
                 <span class="research-node__title">POVQA</span>
               </button>
               <div class="research-node__popover" id="paper-povqa-details" role="tooltip">
                 <span class="research-node__venue">CVPRW · 2026</span>
                 <strong>POVQA: Preference-Optimized Video Question Answering with Rationales for Data Efficiency</strong>
                 <p>Uses compact video evidence and curated reasoning traces for long-context Video-QA.</p>
-                <a href="https://arxiv.org/abs/2510.01009">open paper ↗</a>
+                <div class="research-node__actions">
+                  <button class="research-node__preview" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/povqa_qualitative.mp4" data-full-poster="visual_resources/gifs/povqa_qualitative.gif" data-alt="POVQA qualitative Video-QA preview" data-caption="POVQA: preference-optimized Video-QA with rationales">watch sample ▷</button>
+                  <a href="https://arxiv.org/abs/2510.01009">paper ↗</a>
+                </div>
               </div>
             </div>
 
             <div class="research-node node--redemption node--reasoning">
               <button class="research-node__trigger" type="button" aria-describedby="paper-redemption-details">
-                <span class="toy toy--yarn toy--yarn-blue" aria-hidden="true"><i></i></span>
+                <span class="toy toy--wheel" aria-hidden="true"><i></i></span>
                 <span class="research-node__title">Redemption<br>Score</span>
               </button>
               <div class="research-node__popover" id="paper-redemption-details" role="tooltip">
                 <span class="research-node__venue">IEEE Transactions on Multimedia · 2026</span>
                 <strong>Redemption Score: A Multi-Modal Evaluation Framework for Image Captioning via Distributional, Perceptual, and Linguistic Signal Triangulation</strong>
                 <p>Triangulates visual, linguistic, and distributional signals to evaluate image–text alignment.</p>
-                <a href="https://arxiv.org/abs/2505.16180">open paper ↗</a>
+                <div class="research-node__actions">
+                  <button class="research-node__preview" type="button" data-lightbox-trigger data-full-type="image" data-full-src="visual_resources/images/redemption_score.png" data-alt="Redemption Score methodology figure" data-caption="Redemption Score multimodal evaluation framework">view sample ▷</button>
+                  <a href="https://arxiv.org/abs/2505.16180">paper ↗</a>
+                </div>
               </div>
             </div>
           </div>
@@ -696,9 +721,13 @@
             var video = trigger.querySelector("video");
             var mediaType = trigger.getAttribute("data-full-type") || (video ? "video" : "image");
             var media = mediaType === "video" ? video : image;
-            var source = trigger.getAttribute("data-full-src") || media.currentSrc || media.src;
-            var altText = mediaType === "video" ? (media.getAttribute("aria-label") || "") : media.alt;
+            var source = trigger.getAttribute("data-full-src") || (media ? (media.currentSrc || media.src) : "");
+            var altText = trigger.getAttribute("data-alt") || (media ? (mediaType === "video" ? (media.getAttribute("aria-label") || "") : media.alt) : "");
             var caption = trigger.getAttribute("data-caption") || altText;
+
+            if (!source) {
+              return;
+            }
 
             openLightbox({
               type: mediaType,
