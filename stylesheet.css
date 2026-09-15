@@ -660,17 +660,38 @@ h3 {
 .reasoning-yarn {
   fill: none;
   stroke: var(--map-red);
-  stroke-dasharray: 5 6;
   stroke-linecap: round;
-  stroke-width: 2.5;
-  animation: cat-tree-yarn 2.2s linear infinite;
+  stroke-width: 1.8;
   vector-effect: non-scaling-stroke;
 }
 
-.reasoning-yarn--loose {
-  stroke: #7f2b18;
-  stroke-dasharray: none;
-  stroke-width: 1.7;
+.tree-cat-decor__paw {
+  fill: var(--map-red);
+  opacity: 0.32;
+}
+
+.tree-cat-decor__paw--blue {
+  fill: var(--map-blue);
+  opacity: 0.42;
+}
+
+.tree-cat-decor__yarn circle {
+  fill: var(--map-acid);
+  stroke: var(--map-ink);
+  stroke-width: 1.5;
+}
+
+.tree-cat-decor__yarn path {
+  fill: none;
+  stroke: var(--map-ink);
+  stroke-linecap: round;
+  stroke-width: 1.2;
+}
+
+.tree-cat-decor ellipse,
+.tree-cat-decor circle,
+.tree-cat-decor path {
+  vector-effect: non-scaling-stroke;
 }
 
 .cat-teaser__rod,
@@ -793,6 +814,27 @@ h3 {
   transform-origin: center;
 }
 
+.cat-sunglasses rect {
+  fill: rgba(166, 210, 230, 0.24);
+  stroke: var(--map-ink);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.cat-sunglasses__frame {
+  fill: none;
+  stroke: var(--map-ink);
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.cat-sunglasses__shine {
+  fill: none;
+  stroke: rgba(255, 253, 245, 0.88);
+  stroke-linecap: round;
+  stroke-width: 1.5;
+}
+
 .scene-cat--reconstruction .cat-eye {
   animation-delay: 1.2s;
 }
@@ -814,11 +856,48 @@ h3 {
 }
 
 .builder-hat {
-  fill: var(--map-acid);
+  fill: #e8b83f;
   stroke: var(--map-ink);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2;
+}
+
+.builder-hat-detail {
+  fill: none;
+  stroke: #8b5b24;
+  stroke-linecap: round;
+  stroke-width: 1.3;
+}
+
+.thinking-cap__crown {
+  fill: #527f9b;
+  stroke: var(--map-ink);
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.thinking-cap__brim,
+.thinking-cap__bulb-base,
+.thinking-cap__rays {
+  fill: none;
+  stroke: var(--map-ink);
+  stroke-linecap: round;
+  stroke-width: 1.6;
+}
+
+.thinking-cap__bulb {
+  fill: #f1cc4d;
+  stroke: var(--map-ink);
+  stroke-width: 1.5;
+}
+
+.thinking-cap text {
+  fill: #fffdf5;
+  font-family: var(--mono);
+  font-size: 6px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
 }
 
 .builder-hammer path {
@@ -939,23 +1018,27 @@ h3 {
 
 .cat-tree__chapter--recognition {
   bottom: 8px;
-  left: 6%;
+  left: 16.5%;
+  transform: translateX(-50%) rotate(-0.4deg);
 }
 
 .cat-tree__chapter--reconstruction {
   bottom: 8px;
-  left: 41.5%;
+  left: 50%;
   background:
     repeating-linear-gradient(90deg, transparent 0 5px, rgba(42, 36, 28, 0.055) 5px 6px),
     rgba(111, 156, 186, 0.22);
+  transform: translateX(-50%) rotate(-0.4deg);
 }
 
 .cat-tree__chapter--reasoning {
-  right: 6%;
+  right: auto;
   bottom: 8px;
+  left: 84.3%;
   background:
     repeating-linear-gradient(90deg, transparent 0 5px, rgba(42, 36, 28, 0.055) 5px 6px),
     rgba(204, 228, 92, 0.26);
+  transform: translateX(-50%) rotate(-0.4deg);
 }
 
 .research-node {
@@ -1235,6 +1318,75 @@ h3 {
   background: #456c91;
 }
 
+.toy--pick {
+  width: 44px;
+  height: 48px;
+}
+
+.toy--pick svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.toy--pick path {
+  fill: var(--map-blue);
+  stroke: var(--map-ink);
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  vector-effect: non-scaling-stroke;
+}
+
+.toy--pick circle {
+  fill: var(--map-acid);
+  stroke: var(--map-ink);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.toy--bell {
+  width: 45px;
+  height: 46px;
+}
+
+.toy--bell::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 7px;
+  width: 31px;
+  height: 27px;
+  border: 1.8px solid var(--map-ink);
+  border-radius: 55% 55% 24% 24%;
+  background: var(--map-acid);
+  clip-path: polygon(26% 0, 74% 0, 84% 58%, 100% 88%, 100% 100%, 0 100%, 0 88%, 16% 58%);
+}
+
+.toy--bell::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 17px;
+  width: 11px;
+  height: 10px;
+  border: 1.8px solid var(--map-ink);
+  border-bottom: 0;
+  border-radius: 9px 9px 0 0;
+}
+
+.toy--bell i {
+  position: absolute;
+  bottom: 1px;
+  left: 19px;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid var(--map-ink);
+  border-radius: 50%;
+  background: var(--map-red);
+}
+
 .toy--teaser {
   width: 58px;
   height: 48px;
@@ -1324,7 +1476,7 @@ h3 {
 
 .node--clip {
   top: 407px;
-  left: 20.45%;
+  left: 25.5%;
 }
 
 .node--segmentation {
@@ -1333,13 +1485,13 @@ h3 {
 }
 
 .node--anchor {
-  top: 363px;
-  left: 33.8%;
+  top: 407px;
+  left: 52.2%;
 }
 
 .node--twinsim {
-  top: 476px;
-  left: 54.8%;
+  top: 348px;
+  left: 58.5%;
 }
 
 .node--povqa {
@@ -1452,12 +1604,6 @@ h3 {
 
   50% {
     transform: rotate(8deg) translateY(3px);
-  }
-}
-
-@keyframes cat-tree-yarn {
-  to {
-    stroke-dashoffset: -22;
   }
 }
 
