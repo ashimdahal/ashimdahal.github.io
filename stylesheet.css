@@ -2857,3 +2857,52 @@ h2 {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* A plush fish hanging from the upper reasoning fishing rod. */
+.node--metasampling {
+  top: 129px;
+  left: 84.4%;
+}
+
+.toy--fish-charm {
+  width: 48px;
+  height: 42px;
+}
+
+.toy--fish-charm svg {
+  width: 100%;
+  height: 100%;
+  fill: #e9a28b;
+  stroke: var(--map-ink);
+  stroke-width: 1.8;
+  stroke-linejoin: round;
+}
+
+.toy--fish-charm .fish-charm__stitch {
+  fill: none;
+  stroke-dasharray: 2 3;
+  stroke-linecap: round;
+}
+
+.toy--fish-charm .fish-charm__eye {
+  fill: var(--map-ink);
+  stroke: none;
+}
+
+.node--metasampling .research-node__popover {
+  top: calc(100% + 12px);
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+
+.node--metasampling .research-node__popover::after {
+  top: -8px;
+  right: 35px;
+  bottom: auto;
+  left: auto;
+  border-top: 1.5px solid var(--line);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 1.5px solid var(--line);
+}

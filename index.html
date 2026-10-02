@@ -156,6 +156,7 @@
 
               <g class="cat-teaser">
                 <path class="cat-teaser__rod" d="M764 166 L901 82"></path>
+                <path class="cat-teaser__string" d="M901 82 C944 66 958 98 952 132"></path>
                 <path class="cat-teaser__string" d="M901 82 C932 155 870 201 884 266"></path>
                 <path class="cat-teaser__feather" d="M884 266 C870 251 854 258 858 272 C862 285 879 283 884 266 Z"></path>
                 <path class="cat-teaser__feather-line" d="M860 271 L884 266"></path>
@@ -310,6 +311,7 @@
               </div>
             </div>
 
+            <!-- TwinSim temporarily hidden.
             <div class="research-node node--twinsim node--reconstruction">
               <button class="research-node__trigger" type="button" aria-describedby="paper-twinsim-details">
                 <span class="toy toy--bell" aria-hidden="true"><i></i></span>
@@ -322,6 +324,30 @@
                 <div class="research-node__actions">
                   <button class="research-node__preview" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/twin_sim.mp4" data-alt="TwinSim digital twin preview" data-caption="TwinSim: a Gaussian-scene digital twin for sim-to-real policy training">watch sample ▷</button>
                   <a href="#twinsim">project ↓</a>
+                </div>
+              </div>
+            </div>
+
+            -->
+
+            <div class="research-node node--metasampling node--reasoning">
+              <button class="research-node__trigger" type="button" aria-describedby="paper-metasampling-details">
+                <span class="toy toy--fish-charm" aria-hidden="true">
+                  <svg viewBox="0 0 48 42" focusable="false">
+                    <path class="fish-charm__body" d="M7 22 C14 7 30 7 36 19 L45 12 L43 23 L45 34 L36 27 C27 39 13 36 7 22 Z"></path>
+                    <path class="fish-charm__stitch" d="M25 14 C30 19 30 26 25 32 M14 26 Q18 30 22 26"></path>
+                    <circle class="fish-charm__eye" cx="16" cy="20" r="2"></circle>
+                  </svg>
+                </span>
+                <span class="research-node__title">MetaSampling</span>
+              </button>
+              <div class="research-node__popover" id="paper-metasampling-details" role="tooltip">
+                <span class="research-node__venue">arXiv · 2026</span>
+                <strong>MetaSampling: Making Frame Samplers Efficient for Long-Video Question Answering</strong>
+                <p>Adapts existing frame selectors to answer long-video questions with fewer frames.</p>
+                <div class="research-node__actions">
+                  <button class="research-node__preview" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/metasampling_qualitative.mp4" data-alt="MetaSampling long-video question answering preview" data-caption="MetaSampling: Making Frame Samplers Efficient for Long-Video Question Answering">watch sample ▷</button>
+                  <a href="https://arxiv.org/abs/2609.33998">paper ↗</a>
                 </div>
               </div>
             </div>
@@ -461,7 +487,31 @@
 
         <div class="research-grid">
 
+          <article class="project-card project-card--featured" id="metasampling">
+            <button class="project-card__media" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/metasampling_qualitative.mp4" data-caption="MetaSampling: Making Frame Samplers Efficient for Long-Video Question Answering" aria-label="Enlarge preview for MetaSampling">
+              <video autoplay muted loop playsinline preload="metadata" aria-label="Project teaser for MetaSampling">
+                <source src="visual_resources/videos/metasampling_qualitative.mp4" type="video/mp4">
+              </video>
+            </button>
+            <div class="project-card__body">
+              <h3 class="project-card__title"><a href="https://arxiv.org/abs/2609.33998">MetaSampling: Making Frame Samplers Efficient for Long-Video Question Answering</a></h3>
+              <p class="project-card__authors"><strong>Ashim Dahal</strong>, <a href="https://sites.usm.edu/banerjee/index.html">Bikramjit Banerjee</a></p>
+              <p class="project-card__desc">A training-free, plug-and-play strategy that adapts existing frame selectors to use fewer frames for long-video question answering while preserving or improving answer accuracy.</p>
+              <div class="project-card__venue-row project-card__venue-row--quiet">
+                <span class="project-card__venue">arXiv</span>
+                <span class="project-card__year">2026</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://arxiv.org/abs/2609.33998">arXiv</a>
+                <a href="https://arxiv.org/pdf/2609.33998">PDF</a>
+              </div>
+            </div>
+          </article>
 
+
+
+
+          <!-- TwinSim temporarily hidden; restore links only when ready to publish.
           <article class="project-card project-card--featured" id="twinsim">
             <button class="project-card__media" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/twin_sim.mp4" data-caption="Does Anchor Selection Matter in 4D Gaussian Streaming?" aria-label="Enlarge preview for Adaptive Anchor Policies for Efficient 4D Gaussian Streaming">
               <video autoplay muted loop playsinline preload="metadata" aria-label="Project Teaser for Twin Sim">
@@ -480,11 +530,12 @@
                 <span class="project-card__year">2026</span>
               </div>
               <div class="project-card__links">
-                <!-- <a href="https://arxiv.org/abs/2603.17227">arXiv</a>
-                <a href="https://arxiv.org/pdf/2603.17227">PDF</a> -->
+                <a href="https://arxiv.org/abs/2603.17227">arXiv</a>
+                <a href="https://arxiv.org/pdf/2603.17227">PDF</a>
               </div>
             </div>
           </article>
+          -->
 
 
           <article class="project-card project-card--featured">
