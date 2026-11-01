@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Ashim Dahal</title>
+    <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
     <meta name="author" content="Ashim Dahal">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,750&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260914h">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261101q">
   </head>
 
   <body>
@@ -18,10 +19,9 @@
         <a class="site-mark" href="#" aria-label="Ashim Dahal home">
           <span class="site-mark__name">Ashim Dahal</span>
           <span class="site-mark__tag">cv / multimodal ai</span>
-          <span class="pixel-cat pixel-cat--mark" aria-hidden="true"></span>
         </a>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#research-map">Map</a>
+          <a href="#research-map">Tree</a>
           <a href="#research">Research</a>
           <a href="#news">News</a>
           <a href="#miscellaneous">Misc</a>
@@ -32,14 +32,15 @@
       <section class="hero">
         <div class="hero__content">
           <p class="eyebrow">Computer Vision and Multimodal AI Researcher</p>
-          <h1 class="name"><span>Ashim</span> <span>Dahal</span></h1>
+          <h1 class="name">
+            <img class="name__wordmark" src="visual_resources/images/branding/ashim-dahal-wordmark.svg?v=4" alt="Ashim Dahal" width="1015" height="328" fetchpriority="high">
+          </h1>
           <p class="hero__lede">
             I'm an undergraduate research assistant at <a href="https://usm.edu">The University of Southern Mississippi</a>. I am employed by <a class="bio-highlight" href="https://sites.google.com/view/nickrahimi/home">Prof. Nick Rahimi</a> at the <a href="https://cil.usm.edu">Cyber Innovation Lab</a>. I have also worked under the advisement of <a class="bio-highlight" href="https://sites.usm.edu/banerjee/index.html">Prof. Bikramjit Banerjee</a> and <a class="bio-highlight" href="https://aimsresearchlab.com">Prof. Rabab Abdelfattah</a> on topics related to multimodal AI and scene reconstruction.
           </p>
           <div class="hero__copy">
             <p>
-              I like building systems that make visual reasoning cheaper, clearer, and easier to inspect: video QA, Gaussian Splatting, segmentation, image-caption evaluation, and model analysis.
-            </p>
+            I like building vision centric systems that learns to jointly recognize, reconstruct and reason about its observations. I like it more when these systems are time and storage efficient.</p>
             <p>
               Outside research, I play bansuri, read literature, organize campus developer events, lead the Google Developer Group and the Cinema Appreciation Club, and occasionally write essays fast enough to win trouble.
             </p>
@@ -261,7 +262,7 @@
             <div class="research-node node--clip node--recognition">
               <button class="research-node__trigger" type="button" aria-describedby="paper-clip-details">
                 <span class="toy toy--mouse" aria-hidden="true"><i></i></span>
-                <span class="research-node__title">Embedding Shift<br>on CLIP</span>
+                <span class="research-node__title">Embedding Shift<br>on CLIP<span class="research-node__publication">CVPRW 2025</span></span>
               </button>
               <div class="research-node__popover" id="paper-clip-details" role="tooltip">
                 <span class="research-node__venue">CVPRW · 2025</span>
@@ -277,10 +278,10 @@
             <div class="research-node node--segmentation node--recognition">
               <button class="research-node__trigger" type="button" aria-describedby="paper-segmentation-details">
                 <span class="toy toy--mouse toy--mouse-blue" aria-hidden="true"><i></i></span>
-                <span class="research-node__title">ViT vs. CNN<br>Segmentation</span>
+                <span class="research-node__title">ViT vs. CNN<br>Segmentation<span class="research-node__publication">IEEE Sensors J. 2025</span></span>
               </button>
               <div class="research-node__popover" id="paper-segmentation-details" role="tooltip">
-                <span class="research-node__venue">IEEE Sensors Journal</span>
+                <span class="research-node__venue">IEEE Sensors Journal · 2025</span>
                 <strong>Heuristical Comparison of Vision Transformers Against Convolutional Neural Networks for Semantic Segmentation on Remote Sensing Imagery</strong>
                 <p>A weighted-loss lightweight U-Net approaches a much larger ViT on remote-sensing segmentation.</p>
                 <div class="research-node__actions">
@@ -307,6 +308,27 @@
                 <div class="research-node__actions">
                   <button class="research-node__preview" type="button" data-lightbox-trigger data-full-type="video" data-full-src="visual_resources/videos/anchor_policies.mp4" data-alt="4D Gaussian anchor policy preview" data-caption="Does Anchor Selection Matter in 4D Gaussian Streaming?">watch sample ▷</button>
                   <a href="https://arxiv.org/abs/2603.17227">paper ↗</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="research-node node--gaussian-survey node--reconstruction">
+              <button class="research-node__trigger" type="button" aria-describedby="paper-gaussian-survey-details">
+                <span class="toy toy--catrang" aria-hidden="true">
+                  <svg viewBox="0 0 64 48" focusable="false">
+                    <path class="catrang__body" d="M3 35 11 12Q13 26 23 23L25 8l7 7 7-7 2 15Q51 26 53 12l8 23Q51 29 44 34Q37 34 32 42Q27 34 20 34Q13 29 3 35Z"></path>
+                    <path class="catrang__eyes" d="m25 24 4 2m6 0 4-2"></path>
+                    <path class="catrang__face" d="m30 29 2 2 2-2m-8 1-7-2m7 5h-8m20-3 7-2m-7 5h8"></path>
+                  </svg>
+                </span>
+                <span class="research-node__title">Gaussian Splatting<br>Survey<span class="research-node__publication">Pattern Recognition 2027</span></span>
+              </button>
+              <div class="research-node__popover" id="paper-gaussian-survey-details" role="tooltip">
+                <span class="research-node__venue">Pattern Recognition · 2027</span>
+                <strong>Gaussian Splatting for Real-Time Scene Reconstruction: Methods, Systems, and Trade-offs</strong>
+                <p>A survey of Gaussian-splatting methods, systems, and trade-offs for real-time scene reconstruction.</p>
+                <div class="research-node__actions">
+                  <a href="https://arxiv.org/abs/2610.17513">paper ↗</a>
                 </div>
               </div>
             </div>
@@ -355,7 +377,7 @@
             <div class="research-node node--povqa node--reasoning">
               <button class="research-node__trigger" type="button" aria-describedby="paper-povqa-details">
                 <span class="toy toy--teaser" aria-hidden="true"><i></i></span>
-                <span class="research-node__title">POVQA</span>
+                <span class="research-node__title">POVQA<span class="research-node__publication">CVPRW 2026</span></span>
               </button>
               <div class="research-node__popover" id="paper-povqa-details" role="tooltip">
                 <span class="research-node__venue">CVPRW · 2026</span>
@@ -371,7 +393,7 @@
             <div class="research-node node--redemption node--reasoning">
               <button class="research-node__trigger" type="button" aria-describedby="paper-redemption-details">
                 <span class="toy toy--wheel" aria-hidden="true"><i></i></span>
-                <span class="research-node__title">Redemption<br>Score</span>
+                <span class="research-node__title">Redemption<br>Score<span class="research-node__publication">IEEE TMM 2026</span></span>
               </button>
               <div class="research-node__popover" id="paper-redemption-details" role="tooltip">
                 <span class="research-node__venue">IEEE Transactions on Multimedia · 2026</span>
@@ -406,6 +428,10 @@
         <div class="news-board" aria-label="Recent news and updates">
           <div class="news-list" tabindex="0">
             <!-- Add new updates here. Keep newest items first and use a short date label. -->
+            <article class="news-item">
+              <time datetime="2026-09">OCT 2026</time>
+              <p>Paper Accepted at Elsevier Pattern Recognition (IF:9.7)</p>
+            </article>
             <article class="news-item">
               <time datetime="2026-09">Fall 2026</time>
               <p>Eagle SPUR Award winner.</p>
@@ -481,7 +507,7 @@
             </div>
           </div>
           <p class="section-note">
-            A few Selected works, ordered newest first. Rows with the acid side mark are computer vision and multimodal highlights; <span class="preview-note">click thumbnails to open larger previews</span>.
+            A visual demonstration of past projects, organized reverse chronological order. For full list please refer Google Scholar.  <span class="preview-note">click thumbnails to open larger previews</span>.
           </p>
         </div>
 
@@ -656,7 +682,7 @@
               <p class="project-card__desc">A comparison of ViTs and CNNs on iSAID segmentation, including a loss function that helps a smaller CNN compete with a much larger ViT.</p>
               <div class="project-card__venue-row">
                 <span class="project-card__venue project-card__venue--emphasis">IEEE Sensors Journal</span>
-                <span class="project-card__year">2024</span>
+                <span class="project-card__year">2025</span>
                 <span class="project-card__metric">Impact Factor 4.5</span>
               </div>
               <div class="project-card__links">
@@ -701,46 +727,68 @@
         </div>
 
         <div class="misc-grid">
-          <article class="misc-card misc-card--apricot">
-            <div class="misc-card__label">Blogs and Paper Summaries</div>
-            <div class="misc-card__links">
-              <a href="https://www.linkedin.com/in/ashimdahal/recent-activity/documents/">LinkedIn Paper Reviews</a>
-              <a href="https://ashimdahal.blogspot.com/">Blogs and Newsletters</a>
+          <article class="misc-card misc-card--mario" aria-labelledby="misc-reading-title">
+            <div class="misc-card__scene" aria-hidden="true">
+              <img src="visual_resources/images/misc/reading-wallpaper.jpg" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+            </div>
+            <div class="misc-card__body">
+              <h3 class="misc-card__label" id="misc-reading-title">Blogs and Paper Summaries</h3>
+              <div class="misc-card__links">
+                <a href="https://www.linkedin.com/in/ashimdahal/recent-activity/documents/">LinkedIn Paper Reviews</a>
+                <a href="https://ashimdahal.blogspot.com/">Blogs and Newsletters</a>
+              </div>
             </div>
           </article>
 
-          <article class="misc-card misc-card--sage">
-            <div class="misc-card__label" id="bootcamps">Teaching in Bootcamps</div>
-            <div class="misc-card__links">
-              <a href="https://github.com/drcfsorg/Pokhara_ML_Bootcamp">7 Days Pokhara Machine Learning Bootcamp, 2023</a>
-              <a href="https://github.com/drcfsorg/DRCFS_Pokhara_Pragati_python_bootcamp">7 Days Pragati School Python Bootcamp, 2023</a>
-              <a href="https://github.com/drcfsorg/DRCFS_Chitwan_ML_Bootcamp">DRCFS Chitwan Bootcamp, 2023</a>
-              <a href="https://github.com/twlorg/TWL_DRCFS_March_Madness_Python_Bootcamp.git">14 Days Intermediate Python Bootcamp, 2023</a>
-              <a href="https://github.com/drcfsorg/TWL_DRCFS_30DaysPythonBootcamp">30 Days Beginner Python Bootcamp, 2022</a>
+          <article class="misc-card misc-card--oogway" aria-labelledby="bootcamps">
+            <div class="misc-card__scene" aria-hidden="true">
+              <img src="visual_resources/images/misc/oogway-pixel.jpg" alt="" width="576" height="324" loading="lazy" decoding="async">
+            </div>
+            <div class="misc-card__body">
+              <h3 class="misc-card__label" id="bootcamps">Teaching in Bootcamps</h3>
+              <div class="misc-card__links">
+                <a href="https://github.com/drcfsorg/Pokhara_ML_Bootcamp">7 Days Pokhara Machine Learning Bootcamp, 2023</a>
+                <a href="https://github.com/drcfsorg/DRCFS_Pokhara_Pragati_python_bootcamp">7 Days Pragati School Python Bootcamp, 2023</a>
+                <a href="https://github.com/drcfsorg/DRCFS_Chitwan_ML_Bootcamp">DRCFS Chitwan Bootcamp, 2023</a>
+                <a href="https://github.com/twlorg/TWL_DRCFS_March_Madness_Python_Bootcamp.git">14 Days Intermediate Python Bootcamp, 2023</a>
+                <a href="https://github.com/drcfsorg/TWL_DRCFS_30DaysPythonBootcamp">30 Days Beginner Python Bootcamp, 2022</a>
+              </div>
             </div>
           </article>
 
-          <article class="misc-card misc-card--sand">
-            <div class="misc-card__label">Invited Talks</div>
-            <div class="misc-card__links">
-              <a href="https://drive.google.com/drive/folders/1XbNqKAd2IPio04lJBkGnd2IRLty0D_qs?usp=drive_link">What is an Image?, USM, Hattiesburg, MS, USA, 2025</a>
-              <a href="https://drive.google.com/drive/folders/1VIhtODWWRqT1hE59YT1bMDc6y36qDZ0v?usp=drive_link">Using AI in Journalism, Federation of Nepali Journalists, Kaski, Nepal</a>
-              <a href="https://drive.google.com/drive/folders/11qVf7YNRLIbWpecbFYKqffVXtti3Ffwt?usp=drive_link">Future of AI, Fishtail Academy, Pokhara, Nepal</a>
+          <article class="misc-card misc-card--lotr" aria-labelledby="misc-talks-title">
+            <div class="misc-card__scene" aria-hidden="true">
+              <img src="visual_resources/images/misc/council-of-elrond-lego.jpg" alt="" width="1024" height="666" loading="lazy" decoding="async">
+            </div>
+            <div class="misc-card__body">
+              <h3 class="misc-card__label" id="misc-talks-title">Invited Talks</h3>
+              <div class="misc-card__links">
+                <a href="https://drive.google.com/drive/folders/1XbNqKAd2IPio04lJBkGnd2IRLty0D_qs?usp=drive_link">What is an Image?, USM, Hattiesburg, MS, USA, 2025</a>
+                <a href="https://drive.google.com/drive/folders/1VIhtODWWRqT1hE59YT1bMDc6y36qDZ0v?usp=drive_link">Using AI in Journalism, Federation of Nepali Journalists, Kaski, Nepal</a>
+                <a href="https://drive.google.com/drive/folders/11qVf7YNRLIbWpecbFYKqffVXtti3Ffwt?usp=drive_link">Future of AI, Fishtail Academy, Pokhara, Nepal</a>
+              </div>
             </div>
           </article>
 
-          <article class="misc-card misc-card--gold">
-            <div class="misc-card__label">Teaching in Academia</div>
-            <div class="misc-card__links">
-              <a href="https://drive.google.com/drive/folders/1BcmIjQz4sU8pHxlHMQ7ax67HvQMqyRNo?usp=sharing">Durbar High School: Robotics Instructor</a>
+          <article class="misc-card misc-card--jedi" aria-labelledby="misc-academia-title">
+            <div class="misc-card__scene" aria-hidden="true">
+              <img src="visual_resources/images/misc/jedi-training-pixel.png" alt="" width="940" height="470" loading="lazy" decoding="async">
+            </div>
+            <div class="misc-card__body">
+              <h3 class="misc-card__label" id="misc-academia-title">Teaching in Academia</h3>
+              <div class="misc-card__links">
+                <a href="https://drive.google.com/drive/folders/1BcmIjQz4sU8pHxlHMQ7ax67HvQMqyRNo?usp=sharing">Durbar High School: Robotics Instructor</a>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
       <footer class="site-footer">
-        <span class="pixel-cat pixel-cat--footer" aria-hidden="true"></span>
-        This website is adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+        <svg class="site-footer__bat" viewBox="0 8 64 44" aria-hidden="true" focusable="false">
+          <path d="M4 44Q8 29 17 20Q15 29 22 25L27 11l5 5 5-5 5 14Q49 29 47 20Q56 29 60 44Q49 36 43 48l-6-11H27l-6 11Q15 36 4 44Zm24-15h8l-4-9Z" fill="currentColor" fill-rule="evenodd"></path>
+        </svg>
+        This website once used to be adapted from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
       </footer>
     </main>
 

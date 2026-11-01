@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Batman favicon</title>
+  <ellipse cx="32" cy="32" rx="32" ry="23" fill="#ffdc28"/>
+  <path d="M4 44Q8 29 17 20Q15 29 22 25L27 11l5 5 5-5 5 14Q49 29 47 20Q56 29 60 44Q49 36 43 48l-6-11H27l-6 11Q15 36 4 44Zm24-15h8l-4-9Z" fill="#101318" fill-rule="evenodd"/>
+</svg>
